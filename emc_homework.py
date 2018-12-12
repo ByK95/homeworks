@@ -61,6 +61,16 @@ class emcsolver:
         else:
             return 0
 
+    def Se(self):
+        if self.close_zone:
+            if self._stype:
+                return self.absorbtion_loss() + self.reflection_loss() + self.many_reflection_loss()
+            else:
+                return self.absorbtion_loss() + self.reflection_loss()
+        else:
+            return self.absorbtion_loss() + self.reflection_loss()
+        
+
     def _calculate(self):
         for f in self.__dir__():
             if not f.startswith('_'):
