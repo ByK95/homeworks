@@ -1,4 +1,5 @@
 #Written by Bayram Kaya in order to solve electromagnetic compabability problem
+#source https://github.com/ByK95/homeworks/blob/master/emc_homework.py
 
 from math import pi,sqrt,log10
 from enum import Enum
